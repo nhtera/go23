@@ -7,7 +7,7 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	if len(args) < 2 {
+	if len(args) < 3 || len(args) > 4 {
 		fmt.Println("Usage: reorder_names.go <first name> <last name> [<middle name>] <country code>")
 		return
 	}
